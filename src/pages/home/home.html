@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Listado de Imagenes de Avatar
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list>
+  <ion-item *ngFor="let avatar of avatar;let i = index">
+    <ion-thumbnail item-start>
+      <img src={{avatar.img}} width="10%" height="60%">
+    </ion-thumbnail>
+    <h2>{{avatar.titulo}}</h2>
+    <p>Hayao Miyazaki • 1988</p>
+    <button ion-button clear item-end (click)="navegateToSegunda(i)">View</button>
+  </ion-item>
+</ion-list>
+</ion-content>

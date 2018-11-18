@@ -1,0 +1,69 @@
+<!--
+  Generated template for the SegundaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Avatar Sinopsi</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list >
+	  <ion-item-sliding #item>
+	    <ion-item text-center *ngIf = "nombreimg != null; else elsetag" >
+	      <img src={{nombreimg}} width="70%" height="60%">
+	      
+	        <p text-wrap> Jake, un paraplégico veterano de guerra, es enviado a otro planeta distinto al suyo, Pandora, que está habitado por los Na´vi, una raza humanoide con su propia lengua y cultura. Ambas formas de ver la vida se encuentran y enfrentan.
+
+El argumento nos lleva a una futuro en el que los humanos de la organización RDA extraen recursos del planeta Pandora. Sin embargo los Na, vi unos gigantescos nativos se resiten a ser dominados e invadidos. Los humanos no pueden respirar en Pandora pero si transferir su consciencia a cuerpos inertes de los Na, vi. Esos cuerpos se llaman "Avatar".
+
+Jake, el humano protagonista ocupa un Avatar y ha dedidir si apoya la causa humana o la de los Na,vi. </p>
+	        <h2 text-center>{{titulosi}} </h2>
+
+	    </ion-item>
+	    <ion-item-options side="left">
+	      <button ion-button (click)="favorite(item)">Favorite</button>
+	      <button ion-button color="danger" (click)="share(item)">Share</button>
+	    </ion-item-options>
+
+	    <ion-item-options side="right">
+	      <button ion-button (click)="unread(item)">Unread</button>
+	    </ion-item-options>
+	  </ion-item-sliding>
+	</ion-list>
+	 <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab onclick="window.open('https://www.facebook.com/','_system','location=yes'); return false;"><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab (click)="twitter('https://www.twitter.com')"><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+  
+  <ion-content elsetag>
+	<ion-list >
+	  
+	    <ion-item text-center  >
+	      
+	      
+	        <p text-wrap> Jake, un paraplégico veterano de guerra, es enviado a otro planeta distinto al suyo, Pandora, que está habitado por los Na´vi, una raza humanoide con su propia lengua y cultura. Ambas formas de ver la vida se encuentran y enfrentan.
+
+El argumento nos lleva a una futuro en el que los humanos de la organización RDA extraen recursos del planeta Pandora. Sin embargo los Na, vi unos gigantescos nativos se resiten a ser dominados e invadidos. Los humanos no pueden respirar en Pandora pero si transferir su consciencia a cuerpos inertes de los Na, vi. Esos cuerpos se llaman "Avatar".
+
+Jake, el humano protagonista ocupa un Avatar y ha dedidir si apoya la causa humana o la de los Na,vi. </p>
+	      
+
+	    </ion-item>
+	    
+	  
+	</ion-list>
+	</ion-content>
+  
+</ion-content>

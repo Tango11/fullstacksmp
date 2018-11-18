@@ -1,0 +1,42 @@
+<!--
+  Generated template for the LugarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ingreso de Lugares de Avatar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>Nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="lugar.nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Direccion</ion-label>
+    <ion-input type="text" [(ngModel)]="lugar.direccion"></ion-input>
+  </ion-item>
+<ion-item>
+  <ion-label>Categoria</ion-label>
+  <ion-select [(ngModel)]="lugar.categoria">
+    <ion-option value="AireLibre">Aire Libre</ion-option>
+    <ion-option value="LugarCerrado">Lugar Cerrado</ion-option>
+    
+  </ion-select>
+</ion-item>
+<ion-item>
+		<ion-label floating>Descripcion</ion-label>
+		<ion-textarea [(ngModel)]="lugar.descripcion"></ion-textarea>
+</ion-item>
+</ion-list>
+<button ion-button full (click)="guardarLugar()">Guardar Lugar</button>
+</ion-content>
