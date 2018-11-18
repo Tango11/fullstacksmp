@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+	.wrapp
+	{
+		width: 90%;
+		
+	}
+	.flexbox
+	{
+		
+		display:flex;
+		margin-right: 10px;
+		align-items: center;
+		flex-wrap: wrap;
+		margin:0 auto;
+		justify-content: center;
+
+		/*flex-wrap: wrap;
+		justify-content: center;
+		border:1px solid red;
+		text-align: center;*/
+	}
+	.box
+	{
+		width: 250px;
+		height: 340px;
+		margin:25px;
+		border:2px solid green;
+    	padding: 20px;
+    		
+
+	}
+	h1,h2{
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div class="wrapp">
+		<header>
+			<h1 style="text-align: center;">Listado de Pokemones/API/Sitios Dinámicos con Ajax</h1>
+			<h2 style="text-align: center;">Uso de Estilos con Flexbox</h2>
+			<h2 style="text-align: center;">Desarrollado por: Sergio Miranda</h2>
+		</header>
+		<div >
+			<div  id="action" class="flexbox" >
+              <img src="loader.gif" width="50" height="50" alt="">
+            </div>
+   		 </div>
+	</div>
+	<script src="otrapi.js"></script>
+ </body>
+</html>
